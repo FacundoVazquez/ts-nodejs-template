@@ -1,0 +1,32 @@
+{
+  "name": "ts-nodejs-templante",
+  "version": "1.0.0",
+  "main": "src/main.ts",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon src/main.ts",
+    "test:unit": "jest --config ./test/unit/jest-unit.config.ts --runInBand",
+    "test:unit:coverage": "yarn test:unit --coverage",
+    "test:e2e": "jest --config ./test/e2e/jest-e2e.config.ts --runInBand",
+    "test:e2e:coverage": "yarn test:e2e  --coverage",
+    "format:check": "prettier --check .",
+    "format:write": "prettier --write .",
+    "lint:check": "eslint .",
+    "lint:fix": "eslint --fix ."
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/jest": "^27.5.0",
+    "@typescript-eslint/eslint-plugin": "^5.21.0",
+    "@typescript-eslint/parser": "^5.21.0",
+    "eslint": "^8.14.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "jest": "^27.5.1",
+    "nodemon": "^2.0.16",
+    "prettier": "^2.6.2",
+    "ts-jest": "^27.1.4",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.4"
+  }
+}
